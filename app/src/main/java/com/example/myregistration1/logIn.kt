@@ -14,6 +14,8 @@ class logIn : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in)
+        castViews2()
+        onClick()
     }
     fun castViews2(){
         btnBack=findViewById(R.id.btnBack)

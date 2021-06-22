@@ -35,8 +35,10 @@ class MainActivity : AppCompatActivity() {
     }
     fun onClick(){
         btnLogin.setOnClickListener {
-
-             var  name = etname1.text.toString()
+            var name=etname1.text.toString()
+             if (name.isEmpty()){
+              etname1.setError("This field is requires!")
+             }
             var email=etEmail.text.toString()
             var phone=etPhone.text.toString()
             var password=etPassword.text.toString()
